@@ -1,33 +1,69 @@
-# Iris Dataset Analysis Assignment
+# Iris Dataset Analysis - README
 
 ## Overview
-This assignment demonstrates the use of Python for data loading, cleaning, analysis, and visualization using the Iris dataset.
+This project performs a comprehensive analysis of the famous Iris flower dataset using Python. The analysis includes data loading, exploration, statistical analysis, and visualization to understand the characteristics of different Iris species.
 
-## Tools Used
+## Features
+
+### 1. Data Loading and Exploration
+- Loads the Iris dataset from scikit-learn
+- Converts the data into a pandas DataFrame
+- Adds species names for better readability
+- Provides initial exploration including:
+  - First 5 rows of data
+  - Data types information
+  - Missing values check
+
+### 2. Data Analysis
+- Calculates descriptive statistics (mean, std, min, max, etc.)
+- Groups data by species and calculates mean values
+- Highlights interesting findings about species characteristics
+
+### 3. Data Visualization
+- **Line Chart**: Shows cumulative sum of sepal length
+- **Bar Chart**: Displays average petal length per species
+- **Histogram**: Visualizes distribution of sepal length
+- **Scatter Plot**: Illustrates relationship between sepal and petal length, colored by species
+
+## Requirements
+- Python 3.x
 - pandas
 - matplotlib
 - seaborn
-- scikit-learn (for dataset)
-- Jupyter Notebook
+- scikit-learn
 
-## Contents
-- Iris_Data_Analysis_Assignment.ipynb: A complete Jupyter notebook with:
-  - Data loading and exploration
-  - Basic descriptive analysis
-  - Group-wise statistical summaries
-  - Visualizations (line chart, bar chart, histogram, scatter plot)
+## Installation
+1. Clone this repository
+2. Install required packages:
+   ```bash
+   pip install pandas matplotlib seaborn scikit-learn
+   ```
 
-## How to Use
-1. Open the notebook in Jupyter or Google Colab.
-2. Run the cells in order to view the outputs.
-3. Use File > Download As > PDF in Jupyter if needed for PDF conversion.
+## Usage
+Simply run the `iris_analysis.py` script:
+```bash
+python iris_analysis.py
+```
 
-## Visualizations Included
-- Line chart: Cumulative Sepal Length over sample index
-- Bar chart: Average Petal Length per species
-- Histogram: Sepal Width distribution
-- Scatter plot: Sepal Length vs Petal Length (colored by species)
+The script will:
+1. Load and explore the dataset
+2. Perform statistical analysis
+3. Generate and display four different visualizations
 
-## Observations
-- Setosa species shows distinctly smaller petal sizes.
-- Virginica and Versicolor are more similar in petal measurements.
+## Output
+The script outputs:
+1. Dataset information to the console
+2. Statistical summaries to the console
+3. Four matplotlib visualizations in separate windows
+
+## Key Findings
+- Setosa species has the smallest average petal length
+- Virginica has the longest average petal length
+- Clear separation between species visible in the scatter plot
+- Sepal length distribution shows distinct patterns
+
+## Author
+[Your Name]
+
+## License
+[MIT License] (or specify your preferred license)
